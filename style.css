@@ -1,0 +1,294 @@
+@keyframes pulse {
+  0% {
+    transform:scale(1);
+  }
+  50% {
+    transform:scale(0.9);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+
+@keyframes slider {
+  0% {
+    background: url(images/Global-j2-BannePC.jpg);
+  }
+  25% {
+    background: url(images/J6B-banner-pc.jpg);
+  }
+  50% {
+    background: url(images/Global-j1PC.png);
+  }
+  75% {
+    background: url(images/J15S-banner-PC_rn9.jpg);
+  }
+}
+
+body {
+  color: #616161;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+.learn_button a:visited {
+  color: white;
+}
+
+.learn_button a{
+  color: white;
+}
+
+.menu a:visited {
+  color: #616161;
+}
+
+.menu {
+  font-weight: bold;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #616161;
+  background-color: #fff;
+  position: fixed;
+  z-index: 5;
+  border-bottom: 1px solid #616161;
+}
+
+.products {
+  list-style-type: none;
+  align-items: center;
+  left: 500px;
+  font-size: 14px;
+}
+
+.product {
+  margin: 0 20px;
+  transition: .3s
+}
+
+.product:hover {
+  color: black;
+  font-size: 20px;
+}
+
+.logo {
+  background-image: url(https://i01.appmifile.com/webfile/globalimg/pandora/mihome.png);
+  width: 56px;
+  height: 56px;
+  background-position: -56px;
+  transition: .4s;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+
+.logo:hover {
+  background-position: 0px;
+}
+
+.main-image {
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding-top: 100px;
+
+  width: 100%;
+  height: 60vh;
+  transition: .3s;
+  background-repeat: no-repeat;
+  animation: slider 12s steps(1) infinite;
+}
+
+.main-image h2 {
+  font-size: 48px;
+  position: absolute;
+  top: 250px;
+  left: 400px;
+}
+
+.main-image p {
+  font-size: 32px;
+  position: absolute;
+  top: 330px;
+  left: 400px;
+}
+
+.learn_button {
+  width: 180px;
+  height: 70px;
+  border: 2px solid white;
+  border-radius: 50px;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 0;
+  font-weight: bold;
+  top: 430px;
+  left: 400px;
+}
+
+.none {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 450px;
+  left:100px;
+}
+
+
+.anim_pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.section {
+  width: 1200px;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  color: black;
+}
+
+.card {
+  margin: 10px;
+  flex-direction: column;
+  width: 400px;
+  height: 300px;
+  background-color: #eaedf5;
+  transition: .3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.cards a:visited {
+  color: black;
+}
+
+.label {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.label h2 {
+  margin: 10px 0;
+}
+
+.mini_image {
+  top: 0px;
+  width: 240px;
+  height: 240px;
+}
+
+.cards {
+  flex-wrap: wrap;
+  width: 1260px;
+  margin: 0 auto;
+}
+
+.footer {
+  height: 750px;
+  background-color: black;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  margin: 0 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgba(red, green, blue, alpha);
+  transition: .6s ease-out;
+}
+
+.vk:hover {
+  background-color: #4a76a8;
+}
+
+.blue:hover {
+  background-color: #385593;
+}
+
+.orange:hover {
+  background-color: #f7a62d;
+}
+
+.pink:hover {
+  background-color: #ae19cc; 
+}
+
+.image {
+  width: 70px;
+  height: 70px;
+  transition: .3s;
+}
+
+.contacts {
+  color:white;
+  padding-top: 10px;
+}
+
+.prev:hover .arrow {
+  transform: translate(-10px, 0);
+}
+
+.prev:hover .text {
+  transform: scale(1.1);
+}
+
+.next:hover .arrow {
+  transform: translate(10px, 0);
+}
+
+.next:hover .text {
+  transform: scale(1.1);
+}
+
+.arrow {
+  transition: .3s;
+  width: 100px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.white {
+  color: white;
+}
+
+.prev, .next {
+  transition: .3s;
+  height: 100px;
+  width: 150px;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 260px;
+  color: black;
+  font-weight: bold;
+}
+
+.text {
+  margin: 10px auto;
+  transition: .3s;
+}
+
